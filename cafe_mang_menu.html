@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ff6b4a">
+<title>منوی کافه مانگ</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--ink:#25213b;--muted:#746f83;--orange:#ff704f;--pink:#ff8eb2;--yellow:#ffd166;--purple:#8174e8;--cream:#fff9f1}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(145deg,#fff0e9,#f4efff 55%,#fff8dc);font-family:"Vazirmatn",Tahoma,sans-serif;color:var(--ink)}
+.wrap{max-width:760px;margin:auto;padding:18px 15px 42px}
+.hero{position:relative;overflow:hidden;border-radius:30px;padding:34px 24px 28px;background:linear-gradient(120deg,#ff704f,#ff9c78 52%,#ffb8c9);color:white;box-shadow:0 15px 35px #d85b4930}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:#ffffff20}
+.hero:before{width:180px;height:180px;left:-45px;top:-70px}.hero:after{width:110px;height:110px;right:-35px;bottom:-40px}
+.brand{font-size:clamp(38px,10vw,58px);font-weight:800;line-height:1.2;letter-spacing:-2px}
+.tag{font-size:14px;margin-top:10px;opacity:.96}
+.pill{display:inline-block;margin-top:18px;background:#fff;color:#f05d48;border-radius:999px;padding:7px 15px;font-size:12px;font-weight:700}
+.intro{text-align:center;color:var(--muted);font-size:13px;margin:18px 4px 22px}
+.nav{display:flex;gap:8px;overflow-x:auto;padding:2px 1px 13px;scrollbar-width:none}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--ink);background:#ffffffc9;border:1px solid #fff;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:600}
+section{margin-top:23px;scroll-margin-top:15px}
+.heading{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.icon{width:42px;height:42px;border-radius:15px;display:grid;place-items:center;font-size:21px;background:white;box-shadow:0 5px 15px #40305c10}
+h2{font-size:19px;margin:0;font-weight:800}
+.sub{font-size:11px;color:var(--muted);margin-top:2px}
+.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.item{background:#ffffffd9;border:1px solid #fff;border-radius:17px;padding:13px 14px;display:flex;align-items:center;gap:10px;min-height:58px;box-shadow:0 5px 15px #40305c08}
+.dot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;background:var(--orange)}
+.item:nth-child(3n+2) .dot{background:var(--purple)}.item:nth-child(3n) .dot{background:#f2b93f}
+.name{font-size:14px;font-weight:600}
+.footer{text-align:center;margin-top:30px;padding:18px;border-radius:22px;background:#28243c;color:#fff}
+.footer strong{font-size:19px}.footer p{font-size:12px;color:#d7d1e5;margin:5px 0 0}
+@media(min-width:600px){.items{grid-template-columns:repeat(3,minmax(0,1fr))}.wrap{padding-top:28px}}
+@media(max-width:360px){.items{grid-template-columns:1fr}.hero{padding:28px 20px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <div class="brand">کافه مانگ</div>
+  <div class="tag">یه حال خوب، یه طعم به‌یادموندنی ✨</div>
+  <span class="pill">منوی دیجیتال کافه</span>
+</header>
+<p class="intro">خوش اومدی! از بین دسته‌بندی‌ها انتخاب کن و منوی مانگ رو ببین.</p>
+<nav class="nav" aria-label="دسته‌بندی منو">
+<a href="#coffee">قهوه</a><a href="#coldcoffee">قهوه سرد</a><a href="#shakes">شیک و اسموتی</a><a href="#mocktail">موکتل</a><a href="#juice">آبمیوه</a><a href="#tea">چای و دمنوش</a><a href="#dessert">دسر</a><a href="#other">نوشیدنی‌ها</a>
+</nav>
+<section id="coffee">
+<div class="heading"><div class="icon">☕</div><div><h2>قهوه‌های گرم</h2><div class="sub">برای شروع یک حال خوب</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">اسپرسو</span></div><div class="item"><i class="dot"></i><span class="name">آمریکانو</span></div><div class="item"><i class="dot"></i><span class="name">لاته</span></div><div class="item"><i class="dot"></i><span class="name">کاپوچینو</span></div><div class="item"><i class="dot"></i><span class="name">موکا</span></div></div>
+</section>
+<section id="coldcoffee">
+<div class="heading"><div class="icon">🧊</div><div><h2>قهوه‌های سرد</h2><div class="sub">خنک و انرژی‌بخش</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">فراپه</span></div><div class="item"><i class="dot"></i><span class="name">آیس لاته</span></div></div>
+</section>
+<section id="shakes">
+<div class="heading"><div class="icon">🥤</div><div><h2>شیک و اسموتی</h2><div class="sub">ترکیب‌های خوشمزه و میوه‌ای</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">شیک شکلات</span></div><div class="item"><i class="dot"></i><span class="name">شیک وانیل</span></div><div class="item"><i class="dot"></i><span class="name">شیک نوتلا</span></div><div class="item"><i class="dot"></i><span class="name">اسموتی توت‌فرنگی</span></div><div class="item"><i class="dot"></i><span class="name">اسموتی انبه</span></div></div>
+</section>
+<section id="mocktail">
+<div class="heading"><div class="icon">🍹</div><div><h2>موکتل‌ها</h2><div class="sub">طعم‌های خنک و رنگارنگ</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">موهیتو</span></div><div class="item"><i class="dot"></i><span class="name">بلو هاوایی</span></div><div class="item"><i class="dot"></i><span class="name">لیموناد</span></div><div class="item"><i class="dot"></i><span class="name">رد موهیتو</span></div></div>
+</section>
+<section id="juice">
+<div class="heading"><div class="icon">🍊</div><div><h2>آبمیوه طبیعی</h2><div class="sub">تازه و پرطراوت</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">آب پرتقال</span></div><div class="item"><i class="dot"></i><span class="name">آب هویج</span></div></div>
+</section>
+<section id="tea">
+<div class="heading"><div class="icon">🫖</div><div><h2>چای و دمنوش</h2><div class="sub">یک مکث دلچسب</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">چای سیاه</span></div><div class="item"><i class="dot"></i><span class="name">چای ماسالا</span></div><div class="item"><i class="dot"></i><span class="name">چای سبز</span></div><div class="item"><i class="dot"></i><span class="name">دمنوش</span></div></div>
+</section>
+<section id="dessert">
+<div class="heading"><div class="icon">🍰</div><div><h2>کیک و دسر</h2><div class="sub">برای شیرین‌تر شدن لحظه‌ها</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">چیزکیک</span></div><div class="item"><i class="dot"></i><span class="name">تیرامیسو</span></div><div class="item"><i class="dot"></i><span class="name">بستنی</span></div></div>
+</section>
+<section id="other">
+<div class="heading"><div class="icon">🥤</div><div><h2>نوشیدنی‌های دیگر</h2><div class="sub">انتخاب‌های خنک و آماده</div></div></div>
+<div class="items"><div class="item"><i class="dot"></i><span class="name">آب معدنی</span></div><div class="item"><i class="dot"></i><span class="name">نوشابه</span></div><div class="item"><i class="dot"></i><span class="name">دلستر</span></div><div class="item"><i class="dot"></i><span class="name">انرژی‌زا</span></div></div>
+</section>
+<footer class="footer"><strong>کافه مانگ 💛</strong><p>ممنون که مانگ رو برای لحظه‌هات انتخاب کردی</p></footer>
+</main>
+</body>
+</html>
